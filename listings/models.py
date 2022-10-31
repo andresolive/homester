@@ -1,7 +1,7 @@
 from sysconfig import is_python_build
 from django.db import models
 from datetime import datetime
-from realtor.models import Realtor
+from realtors.models import Realtor
 
 class Listing(models.Model):
   realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
